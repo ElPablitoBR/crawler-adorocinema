@@ -1,1 +1,494 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta name="ROBOTS" content="INDEX,FOLLOW"><meta name="keywords" content=""><meta name="description" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Comunicação</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      background-color: #E4E4E4;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    .header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+ 
+ /* Aplica fundo salmão para destacar, como no exemplo anterior */
+  .highlight {
+          background-color: #f3dbdb; /* Cor salmão */
+          transition: background-color 0.5s ease; /* Transição suave para remover o fundo */
+      }
+
+      /* Define bordas vermelhas para cada <td> dentro de um <tr> com a classe .highlight */
+      .highlight td {
+          border: 2px solid #D00308; /* Define a cor da borda como vermelha */
+      }
+
+    .chamada {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .chamada ul li {
+      text-transform: uppercase;
+    }
+
+    .question,
+    .feedback {
+      margin-top: 20px;
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: .88rem;
+    }
+
+    .question h2,
+    .feedback h2 {
+      font-size: 0.93rem;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    .choices {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 5px;
+      align-items: center;
+    }
+
+    .choices table {
+      margin-left: auto;
+      margin-right: auto;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: inherit;
+      margin-bottom: 3px;
+      vertical-align: middle;
+      text-align: center;
+      max-width: 600px;
+      min-width: 600px;
+      border-collapse: collapse; /* Remove o espaçamento entre os <td> */
+      border-spacing: 0; /* Define o espaçamento entre células como zero */
+    }
+
+    .choices table thead {
+      font-size: 12px;
+    }
+    .choices table thead tr td {
+      padding-bottom: 10px;
+    }
+
+    #smartcapture-block-xgrx1cj4g5 > div:nth-child(1) > div > table > tr{
+      padding-bottom: 10px;
+    }
+    .choices table tbody tr td{
+      padding: 5px 0 15px !important;
+    }
+    .choices table td{width:20%;}
+
+    .choices input[type="radio"] {
+      margin-top: 5px;
+      margin-left: -2px;
+    }
+
+    .choices span {
+      display: block;
+    }
+
+    #contador {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .submit-btn {
+      display: block;
+      padding: 10px;
+      background-color: #D00308;
+      color: #FFF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://lh4.googleusercontent.com/pX618VDiYgg6jk9wi87Fy-9mBNSY8KcNpEJ89U2rnxy8RA72Xi0m4hjeiS59zouBprrvwziE-AvnvDaMfHyjL0nj_UMeAUH-V25H5OBF30hPrPFrUwAI91q-mDZ9eiIpBw=w1636"
+        alt="Banner">
+    </div>
+
+    <div class="chamada">
+      Nos ajude a aprimorar nossas comunicações em 2025. Queremos melhorar as informações que compartilhamos com você a
+      cada ciclo Natura e Avon. Para isso, gostaríamos de saber o que mais te ajuda a engajar sua rede e o que você sente
+      falta nas comunicações que você recebe por:
+      <ul>
+        <li>Email</li>
+        <li>WhatsApp</li>
+        <li>Notificações do App Minha Consultoria</li>
+      </ul>
+      Suas críticas e sugestões são bem-vindas para construirmos juntos uma liderança mais informada e eficiente.
+    </div>
+
+    <form id="smartcapture-block-xgrx1cj4g5" class="smartcapture-content-wrapper fuelux" action="teste.html" method="post" novalidate>
+        <div class="question">
+        <h2>1 - Na sua opinião, quais foram os <b>temas mais relevantes</b> comunicados em 2024?
+          <span style="color:#c0392b;">*</span></h2>
+        <div class="choices">
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <td>Não Relevante 😕</td>
+                <td>Pouco Relevante 😐</td>
+                <td>Relevante 🙂</td>
+                <td>Muito Relevante 😃</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left;">Destaques do Ciclo:</td>
+                <td><input type="radio" name="1_Destaques_do_Ciclo" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Destaques_do_Ciclo" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Destaques_do_Ciclo" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Destaques_do_Ciclo" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Relatório Pedidos não finalizados:</td>
+                <td><input type="radio" name="1_Relatorio_Pedidos_nao_finalizados" value="Não Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Relatorio_Pedidos_nao_finalizados" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Relatorio_Pedidos_nao_finalizados" value="Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Relatorio_Pedidos_nao_finalizados" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Escola Natura e Avon:</td>
+                <td><input type="radio" name="1_Escola_Natura_e_Avon" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Escola_Natura_e_Avon" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Escola_Natura_e_Avon" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Escola_Natura_e_Avon" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Incentivo para Iniciantes:</td>
+                <td><input type="radio" name="1_Incentivo_a_Iniciantes" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Incentivo_a_Iniciantes" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Incentivo_a_Iniciantes" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Incentivo_a_Iniciantes" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Vídeos explicativos sobre Divulgação (Revista Interativa, Espaço
+                  Digital, etc):</td>
+                <td><input type="radio" name="1_Videos_Divulgacao" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Videos_Divulgacao" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Videos_Divulgacao" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Videos_Divulgacao" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Produtos Natura e Avon:</td>
+                <td><input type="radio" name="1_Produtos_Natura_e_Avon" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Produtos_Natura_e_Avon" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Produtos_Natura_e_Avon" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Produtos_Natura_e_Avon" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Imbatíveis Natura:</td>
+                <td><input type="radio" name="1_Imbativeis_Natura" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Imbativeis_Natura" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td>
+    <input type="radio" name="1_Imbativeis_Natura" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Imbativeis_Natura" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Campanha Sazonais (Dia das Mães, Pais, Natal):</td>
+                <td><input type="radio" name="1_Campanha_Sazonais" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Campanha_Sazonais" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Campanha_Sazonais" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Campanha_Sazonais" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Kit Líder:</td>
+                <td><input type="radio" name="1_Kit_Lider" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Kit_Lider" value="Pouco Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Kit_Lider" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Kit_Lider" value="Muito Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Plano de Crescimento:</td>
+                <td><input type="radio" name="1_Plano_de_Crescimento" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Plano_de_Crescimento" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Plano_de_Crescimento" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Plano_de_Crescimento" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Disponibilização de Ganhos:</td>
+                <td><input type="radio" name="1_Disponibilizacao_de_Ganhos" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Disponibilizacao_de_Ganhos" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Disponibilizacao_de_Ganhos" value="Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Disponibilizacao_de_Ganhos" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+              <tr>
+                <td style="text-align: left;">Imbatíveis Avon:</td>
+                <td><input type="radio" name="1_Imbativeis_Avon" value="Não Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Imbativeis_Avon" value="Pouco Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Imbativeis_Avon" value="Relevante" required="required"
+                    data-validation-message="Please fill out this field."></td>
+                <td><input type="radio" name="1_Imbativeis_Avon" value="Muito Relevante"
+                    required="required" data-validation-message="Please fill out this field."></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question">
+        <h2>2 - Comunicamos sobre produtos, valores e a importância do <b>KIT LÍDER</b>, para mostrar para a sua
+          consultora, o quanto <b>o momento de experimentação de produtos cosméticos pode melhorar as vendas.</b> Essas
+          informações te ajudaram a engajar a sua rede?
+          <span style="color:#c0392b;">*</span></h2>
+        <div class="choices">
+          Pouco 😕
+          <label><span>1</span><input type="radio" name="2_Importancia_KIT_LIDER" value="1" required /></label>
+          <label><span>2</span><input type="radio" name="2_Importancia_KIT_LIDER" value="2" required /></label>
+          <label><span>3</span><input type="radio" name="2_Importancia_KIT_LIDER" value="3" required /></label>
+          <label><span>4</span><input type="radio" name="2_Importancia_KIT_LIDER" value="4" required /></label>
+          <label><span>5</span><input type="radio" name="2_Importancia_KIT_LIDER" value="5" required /></label>
+          😃 Muito
+        </div>
+      </div>
+
+      <div class="question">
+        <h2>3 - Na sua opinião quando te enviamos os <b>DESTAQUES do ciclo</b>, você se sente bem informada?</h2>
+        <div class="choices">
+          Pouco 😕
+          <label><span>1</span><input type="radio" name="3_Destaques_do_ciclo" value="1" required /></label>
+          <label><span>2</span><input type="radio" name="3_Destaques_do_ciclo" value="2" required /></label>
+          <label><span>3</span><input type="radio" name="3_Destaques_do_ciclo" value="3" required /></label>
+          <label><span>4</span><input type="radio" name="3_Destaques_do_ciclo" value="4" required /></label>
+          <label><span>5</span><input type="radio" name="3_Destaques_do_ciclo" value="5" required /></label>
+          😃 Muito
+        </div>
+      </div>
+
+      <div class="question">
+        <h2>4 - Sobre <b>ESCOLA NATURA E AVON</b>, sempre te enviamos <b>os treinamentos destaques daquele ciclo</b>.
+          Na sua opinião você sente que sua rede estuda e fica <b>mais informada com os treinamentos?</b> <span
+            style="color:#c0392b;">*</span></h2>
+        <div class="choices">
+          Pouco 😕
+          <label><span>1</span><input type="radio" name="4_Escola_Natura_Avon" value="1" required /></label>
+    <label><span>2</span><input type="radio" name="4_Escola_Natura_Avon" value="2" required /></label>
+          <label><span>3</span><input type="radio" name="4_Escola_Natura_Avon" value="3" required /></label>
+          <label><span>4</span><input type="radio" name="4_Escola_Natura_Avon" value="4" required /></label>
+          <label><span>5</span><input type="radio" name="4_Escola_Natura_Avon" value="5" required /></label>
+          😃 Muito
+        </div>
+      </div>
+
+      <div class="question">
+        <h2>5 - Na sua opinião, nossas comunicação te ajudaram a engajar mais a sua rede a ponto de <b>aumentar o número de
+            pedidos</b>?
+          <span style="color:#c0392b;">*</span></h2>
+        <div class="choices">
+          Pouco 😕
+          <label><span>1</span><input type="radio" name="5_Aumentar_Numero_Pedidos" value="1" required /></label>
+          <label><span>2</span><input type="radio" name="5_Aumentar_Numero_Pedidos" value="2" required /></label>
+          <label><span>3</span><input type="radio" name="5_Aumentar_Numero_Pedidos" value="3" required /></label>
+          <label><span>4</span><input type="radio" name="5_Aumentar_Numero_Pedidos" value="4" required /></label>
+          <label><span>5</span><input type="radio" name="5_Aumentar_Numero_Pedidos" value="5" required /></label>
+          😃 Muito
+        </div>
+      </div>
+
+      <div class="question">
+        <h2>6 - Te enviamos <b>ofertas e combos por whatsapp</b> para compartilhar com a sua rede.
+          Você acredita que essa ação que pode ter te ajudado na divulgação das ofertas com as consultoras?
+          <span style="color:#c0392b;">*</span></h2>
+        <div class="choices">
+          Pouco 😕
+          <label><span>1</span><input type="radio" name="6_Ofertas_Combos_Whatsapp" value="1" required /></label>
+          <label><span>2</span><input type="radio" name="6_Ofertas_Combos_Whatsapp" value="2" required /></label>
+          <label><span>3</span><input type="radio" name="6_Ofertas_Combos_Whatsapp" value="3" required /></label>
+          <label><span>4</span><input type="radio" name="6_Ofertas_Combos_Whatsapp" value="4" required /></label>
+          <label><span>5</span><input type="radio" name="6_Ofertas_Combos_Whatsapp" value="5" required /></label>
+          😃 Muito
+        </div>
+      </div>
+
+      <div class="question">
+        <h2>7 - Te enviamos <b>via whatsapp alguns vídeos estilo passo</b> a passo sobre as nossas <b>Ferramentas
+            Digitais (Revista Digital, Espaço Digital, etc)</b>.
+          Você acredita que te ajudou a ficar mais informada e a deixar a sua rede mais esclarecida sobre essas
+          ferramentas?
+          <span style="color:#c0392b;">*</span></h2>
+        <div class="choices">
+          Pouco 😕
+          <label><span>1</span><input type="radio" name="7_Ferramentas_Digitais" value="1" required /></label>
+          <label><span>2</span><input type="radio" name="7_Ferramentas_Digitais" value="2" required /></label>
+          <label><span>3</span><input type="radio" name="7_Ferramentas_Digitais" value="3" required /></label>
+          <label><span>4</span><input type="radio" name="7_Ferramentas_Digitais" value="4" required /></label>
+          <label><span>5</span><input type="radio" name="7_Ferramentas_Digitais" value="5" required /></label>
+          😃 Muito
+        </div>
+      </div>
+
+      <div class="feedback">
+        <h2>8 - Tem alguma <b>crítica</b> sobre as comunicações enviadas ao longo de 2024?
+          Sentiu <b>falta de algum tema</b> e gostaria de sugerir para incluirmos nas nossas próximas comunicações?
+          <br>Sua opinião é muito importante!
+          <b>Aproveite para nos indicar o que gostaria de receber em 2025.</b></h2>
+        <textarea id="8_Critica" name="8_Critica" rows="4" maxlength="500"
+          placeholder="Escreva sua sugestão aqui..." style="width: 100%;"></textarea>
+        <div id="contador">500 caracteres restantes</div>
+      </div>
+        
+        <input name="subscriberKey" type="hidden" value="">
+        <input name="dataInclusao" type="hidden" value="2024-11-08 09:03:18">
+
+      <button type="submit" class="submit-btn" id="enviar_form">Enviar</button>
+    </form>
+  </div>
+  <form id="smartcapture-block-xgrx1cj4g5" class="smartcapture-content-wrapper fuelux" action="https://cloud.hello.natura.com/PesquisaFV" method="post" novalidate>
+    <!-- Restante do seu HTML -->
+</form>
+
+<script type="text/javascript">
+    document.getElementById("smartcapture-block-xgrx1cj4g5").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio do formulário
+
+        // Define as questões obrigatórias com as mensagens de alerta
+        const questoes = [
+            { name: '1_Destaques_do_Ciclo', message: 'Por favor, informe sua escolha na pergunta 1 em: Destaques do Ciclo.', estrutura: 'tr' },
+            { name: '1_Relatorio_Pedidos_nao_finalizados', message: 'Por favor, informe sua escolha na pergunta 1 em: Relatório de Pedidos não finalizados.', estrutura: 'tr' },
+            { name: '1_Escola_Natura_e_Avon', message: 'Por favor, informe sua escolha na pergunta 1 em: Escola Natura e Avon.', estrutura: 'tr' },
+            { name: '1_Incentivo_a_Iniciantes', message: 'Por favor, informe sua escolha na pergunta 1 em: Incentivo para Iniciantes.', estrutura: 'tr' },
+            { name: '1_Videos_Divulgacao', message: 'Por favor, informe sua escolha na pergunta 1 em: Vídeos explicativos sobre Divulgação (Revista Interativa, Espaço Digital, etc).', estrutura: 'tr' },
+            { name: '1_Produtos_Natura_e_Avon', message: 'Por favor, informe sua escolha na pergunta 1 em: Produtos Natura e Avon.', estrutura: 'tr' },
+            { name: '1_Imbativeis_Natura', message: 'Por favor, informe sua escolha na pergunta 1 em: Imbatíveis Natura.', estrutura: 'tr' },
+            { name: '1_Campanha_Sazonais', message: 'Por favor, informe sua escolha na pergunta 1 em: Campanha Sazonais.', estrutura: 'tr' },
+            { name: '1_Kit_Lider', message: 'Por favor, informe sua escolha na pergunta 1 em: Kit Líder.', estrutura: 'tr' },
+            { name: '1_Plano_de_Crescimento', message: 'Por favor, informe sua escolha na pergunta 1 em: Plano de Crescimento.', estrutura: 'tr' },
+            { name: '1_Disponibilizacao_de_Ganhos', message: 'Por favor, informe sua escolha na pergunta 1 em: Disponibilização de Ganhos.', estrutura: 'tr' },
+            { name: '1_Imbativeis_Avon', message: 'Por favor, informe sua escolha na pergunta 1 em: Imbatíveis Avon.', estrutura: 'tr' },
+            { name: '2_Importancia_KIT_LIDER', message: 'Por favor, informe sua escolha na pergunta 2.', estrutura: 'div' },
+            { name: '3_Destaques_do_ciclo', message: 'Por favor, informe sua escolha na pergunta 3.', estrutura: 'div' },
+            { name: '4_Escola_Natura_Avon', message: 'Por favor, informe sua escolha na pergunta 4.', estrutura: 'div' },
+            { name: '5_Aumentar_Numero_Pedidos', message: 'Por favor, informe sua escolha na pergunta 5.', estrutura: 'div' },
+            { name: '6_Ofertas_Combos_Whatsapp', message: 'Por favor, informe sua escolha na pergunta 6.', estrutura: 'div' },
+            { name: '7_Ferramentas_Digitais', message: 'Por favor, informe sua escolha na pergunta 7.', estrutura: 'div' }
+        ];
+
+        let formularioValido = true;
+
+        for (let i = 0; i < questoes.length; i++) {
+            const questao = questoes[i];
+            const preenchido = document.querySelector(`input[name="${questao.name}"]:checked`);
+
+            if (!preenchido) {
+                alert(questao.message); // Exibe a mensagem de alerta
+
+                let elementoDestaque;
+                if (questao.estrutura === 'tr') {
+                    elementoDestaque = document.querySelector(`input[name="${questao.name}"]`).closest('tr'); // Seleciona o <tr> para a questão 1
+                } else {
+                    elementoDestaque = document.querySelector(`input[name="${questao.name}"]`).closest('.choices'); // Seleciona a <div class="choices"> para as demais questões
+                }
+
+                elementoDestaque.classList.add("highlight"); // Adiciona a cor de fundo salmão
+                elementoDestaque.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Rola a página até a questão
+
+                // Remove o fundo salmão quando respondido
+                const radios = document.querySelectorAll(`input[name="${questao.name}"]`);
+                radios.forEach((radio) => {
+                    radio.addEventListener('change', function() {
+                        elementoDestaque.classList.remove("highlight");
+                    });
+                });
+
+                formularioValido = false; // Marca o formulário como inválido
+                break; // Interrompe o loop após o primeiro erro
+            }
+        }
+
+        if (formularioValido) {
+            event.target.submit(); // Submete o formulário se todas as questões obrigatórias foram respondidas
+        }
+    });
+
+    // Contador de caracteres para o campo de texto
+    const textarea = document.getElementById('8_Critica');
+    const contador = document.getElementById('contador');
+
+    textarea.addEventListener('input', function() {
+        const caracteresRestantes = 500 - textarea.value.length;
+        contador.textContent = `${caracteresRestantes} caracteres restantes`;
+    });
+</script>
+
+
+</body>
+</html>
